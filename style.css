@@ -6,20 +6,19 @@
   font-family: "Poppins";
 }
 
-#bg-vid {
-  width: 100vw;
-  height: auto;
-  z-index: -1;
-  position: fixed;
+body {
+  height: 110vh;
 }
 
 .layer {
-  z-index: 1;
-  background-color: black;
+  background-image: url("../Resources/maksim-istomin-f4aNyqBsv5U-unsplash (1).jpg");
   width: 100vw;
   height: 100vh;
-  opacity: 0.3;
-  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+  position: fixed;
+  color: black;
 }
 
 .container {
@@ -36,6 +35,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  z-index: 999;
 }
 .container nav {
   margin-top: 2rem;
@@ -49,6 +49,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 90vw;
+  visibility: hidden;
 }
 .container nav span {
   color: #eeab92;
@@ -69,6 +70,7 @@
   color: white;
   text-align: center;
   padding: 1rem;
+  visibility: hidden;
 }
 .container i {
   color: #eeab92;
@@ -76,6 +78,7 @@
   margin-top: 2rem;
   margin-bottom: 2rem;
   z-index: 999;
+  visibility: hidden;
 }
 .container button {
   background-color: #eeab92;
@@ -85,4 +88,14 @@
   border: transparent;
   border-radius: 25px;
   z-index: 999;
+  visibility: hidden;
+}
+
+.line {
+  display: block;
+  width: 5px;
+  background-color: white;
+  height: 10px;
+  visibility: hidden;
+  margin: 1rem;
 }
