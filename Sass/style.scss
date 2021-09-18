@@ -1,3 +1,82 @@
 @import "_global";
 @import "_variables";
 
+
+#bg-vid{
+    width: 100vw;
+    height: auto;
+    z-index: -1;
+    position: fixed;
+}
+
+.layer{
+    z-index: 1;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    opacity: .3;
+    position: absolute;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    nav{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        color: white;
+        z-index: 999;
+        display: flex;
+        justify-content: space-between;
+        width: 90vw;
+        //visibility: hidden;
+
+        span{
+            color: rgb(238, 171, 146);
+
+        }
+
+        ul{
+            display: flex;
+            justify-content: space-around;
+            width: 30vw;
+            li{
+                list-style: none;
+            }
+
+        }
+    }
+
+    h1{
+        z-index: 999;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        //visibility: hidden;
+
+    }
+    i{
+        color: rgb(238, 171, 146);
+        padding: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        z-index: 999;
+        //visibility: hidden;
+
+    }
+
+    button{
+        background-color: rgb(238, 171, 146);
+        color: black;
+        font-size: 1.25rem;
+        padding: .5rem;
+        border: transparent;
+        border-radius: 25px;
+        z-index: 999;
+        //visibility: hidden;
+
+    }
+}
